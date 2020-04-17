@@ -1,45 +1,46 @@
 body {
-  width: 100%;
-  background: url("../images/header-background.png") no-repeat; }
+  width: 100%; }
 
 #header {
-  border-bottom: 1px solid #414141; }
+  background: url("../images/header-background.png") no-repeat; }
 
-header {
-  width: 100%; }
-  header .logo {
-    display: inline-block;
-    margin: 40px; }
-  header .header-menu {
+.header {
+  width: 100%;
+  height: 100vh; }
+  .header #top {
+    border-bottom: 1px solid #3e4041;
+    padding: 40px; }
+  .header .logo {
+    display: inline-block; }
+  .header .header-menu {
     display: block;
-    float: right;
-    margin: 40px; }
-    header .header-menu ul {
+    float: right; }
+    .header .header-menu ul {
       display: inline-flex; }
-    header .header-menu li {
+    .header .header-menu li {
       flex-direction: column;
       padding-right: 18px; }
-    header .header-menu a {
+    .header .header-menu a {
       font-family: 'roboto' , sans-serif;
       font-size: 16px;
       color: #fff; }
-      header .header-menu a:hover {
+      .header .header-menu a:hover {
         color: #49a479; }
-  header .header-content {
+  .header .header-content {
     width: 75%;
     text-align: center;
     margin: 0 auto; }
-    header .header-content h3 {
+    .header .header-content h3 {
       font-size: 40px;
       color: #49a479; }
-    header .header-content p {
+    .header .header-content p {
       margin: 0 auto;
       width: 50%;
       color: #848383;
       font-size: 17px;
       line-height: 25px;
       padding-top: 15px; }
-    header .header-content a {
+    .header .header-content a {
       display: block;
       width: 250px;
       height: 50px;
@@ -48,6 +49,6 @@ header {
       font-size: 20px;
       line-height: 50px;
       margin-top: 50px; }
-      header .header-content a:hover {
+      .header .header-content a:hover {
         background-color: rgba(255, 255, 255, 0.575);
         color: #398561; }
