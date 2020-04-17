@@ -1,6 +1,67 @@
 body{
-    h1{
-        font-size: 10px;
-        color: redjkhlkjh
+    width: 100%;
+    background: url("../images/header-background.png") no-repeat;
+}
+#header{
+    border-bottom: 1px solid #414141;
+}
+header{
+    width: 100%;
+    .logo{
+       display: inline-block;
+       margin: 40px;
+    }  
+.header-menu{
+    display: block;
+    float: right;
+    margin: 40px;
+    ul{
+        display: inline-flex;
+    }
+    li{
+        flex-direction: column;
+        padding-right: 18px;
+    }
+    a{
+        font-family: 'roboto' , sans-serif;
+        font-size: 16px;
+        color:#fff;
+
+        &:hover{
+            color: #49a479;
+        }
+    }
+}
+    .header-content{
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        h3{
+            font-size: 40px;
+            color: #49a479;
+        }
+        p{
+            margin: 0 auto;
+            width: 50%;
+            color: #848383;
+            font-size: 17px;
+            line-height: 25px;
+            padding-top: 15px;
+        }
+        a{
+            display: block;
+            width: 250px;
+            height: 50px;
+            border: 2px solid #49a479 ;
+            color: #fff;
+            font-size:20px;
+            line-height: 50px;
+            margin-top: 50px;
+            
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.575);
+                color: #398561;
+            }
+        }
     }
 }
