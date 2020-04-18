@@ -7,7 +7,7 @@ body {
     align-items: center;
     width: 100%; }
     body header #header {
-      width: 1100px;
+      width: 1200px;
       display: flex;
       margin: 0px auto;
       padding: 30px 0;
@@ -59,11 +59,9 @@ body {
         display: block;
         padding: 20px;
         margin-top: 100px; }
-  body h4 {
+  body h3 {
     font-size: 25px;
-    border-bottom: 1px solid #efefef;
-    display: inline-block;
-    justify-content: center;
+    text-align: center;
     font-weight: 400;
     padding-bottom: 15px; }
   body article {
@@ -76,7 +74,7 @@ body {
       width: 550px;
       text-align: right;
       border-right: 1px solid #efefef; }
-      body article .left-content span {
+      body article .left-content h4 {
         font-weight: 300;
         font-size: 15px;
         margin-right: 50px; }
@@ -88,7 +86,7 @@ body {
     body article .right-content {
       text-align: left;
       width: 550px; }
-      body article .right-content span {
+      body article .right-content h4 {
         font-weight: 300;
         font-size: 15px;
         margin-left: 50px; }
@@ -111,14 +109,13 @@ body {
     width: 100%;
     background-color: #efefef; }
     body aside #aside {
-      width: 1100px;
-      align-items: center;
+      width: 1200px;
       display: flex;
       margin: 0px auto;
       align-items: center;
       justify-content: space-between;
       height: 120px; }
-      body aside #aside span {
+      body aside #aside h4 {
         font-size: 30px;
         font-weight: 300; }
       body aside #aside button {
@@ -128,3 +125,67 @@ body {
         border: 1px solid #efefef;
         font-size: 17px;
         font-weight: 600; }
+    body aside .slider {
+      background-color: #fff;
+      padding-top: 50px; }
+      body aside .slider h4 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 15px; }
+  body footer {
+    width: 100%;
+    background-color: #202123;
+    margin: 0px auto;
+    align-items: center; }
+    body footer h4 {
+      font-weight: 400;
+      font-size: 25px;
+      padding-bottom: 15px;
+      color: #fff;
+      padding-top: 30px;
+      text-align: center; }
+    body footer .footer {
+      width: 1200px;
+      display: flex; }
+      body footer .footer .footer-content-left {
+        display: flex;
+        flex-direction: column;
+        margin: auto 50px; }
+        body footer .footer .footer-content-left p {
+          font-size: 14px;
+          font-weight: 300;
+          color: #525253; }
+        body footer .footer .footer-content-left b {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 300;
+          padding-bottom: 15px; }
+        body footer .footer .footer-content-left .social-media {
+          margin: 0px auto;
+          align-items: center;
+          justify-content: space-around;
+          width: 300px; }
+          body footer .footer .footer-content-left .social-media a {
+            margin: 0px auto; }
+      body footer .footer .footer-content-right {
+        display: flex;
+        width: 700px;
+        flex-direction: column;
+        align-items: stretch; }
+        body footer .footer .footer-content-right input[type="text"] {
+          width: 335px;
+          height: 45px;
+          margin-bottom: 20px;
+          background-color: #242527;
+          border: 1px solid #3a3b3b;
+          padding-left: 15px;
+          color: #3a3b3b; }
+        body footer .footer .footer-content-right button {
+          width: 335px;
+          height: 60px;
+          background-color: #242527;
+          color: #fff;
+          border: none;
+          font-size: 16px;
+          font-weight: 300; }
