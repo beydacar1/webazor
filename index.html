@@ -12,8 +12,37 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap"
       rel="stylesheet"
     />
-  </head>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </head>
   <body>
     <header>
       <div id="header">
@@ -47,12 +76,14 @@
           voluptatem at in exercitationem!
         </p>
         <button>YARDIMCI OLALIM</button>
-        <a href=""><img src="images/scroll.png" alt="button" /></a>
+        <div id="scroll">
+          <a href="#footer"><img src="images/scroll.png" alt="button" /></a>
+        </div>
       </section>
     </header>
-    <h3>Hakkımızda.</h4>
+    <h3>Hakkımızda.</h3>
     <article>
-      <div class="left-content">
+      <div class="whoamus">
         <h4>Biz Kim miyiz?</h4>
         <p>
           Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
@@ -66,7 +97,7 @@
           sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
         </p>
       </div>
-      <div class="right-content">
+      <div class="importforus">
         <h4>Bizim için önemli tarihler</h4>
         <ul>
           <li>
@@ -86,39 +117,49 @@
       </div>
     </article>
     <aside>
-      <div id="aside">
+      <div id="future">
         <h4>GELECEĞİNİZİ YARATMADA YARDIMA MI İHTİYAÇ DUYUYORSUNUZ?</h4>
         <button>Beraber çalışalım</button>
       </div>
-      <div class="slider">
-        <h4>Can Kattığımız Projeler.</h4>
-        <a href=""><img src="images/scroll-img.png" alt="" /></a>
-        <a href=""><img src="images/scroll-img.png" alt="" /></a>
-        <a href=""><img src="images/scroll-img.png" alt="" /></a>
+    </aside>
+    <aside>
+      <div class="sayfa">
+        <div class="sliderKonum">
+          <div class="slider">
+            <a class="img-bir" href="images/scroll-img.png">
+              <img src="images/scroll-img.png" alt="resim" />
+            </a>
+            <a class="img-iki" href="images/scroll-img.png">
+              <img src="images/scroll-img.png" alt="resim" />
+            </a>
+            <a class="img-uc" href="images/scroll-img.png">
+              <img src="images/scroll-img.png" alt="resim" />
+            </a>
+          </div>
+        </div>
       </div>
     </aside>
     <footer>
-        <h4>Bizimle İletişime Geçin.</h4>
-      <div class="footer">
-        <div class="footer-content-left">
+      <h4>Bizimle İletişime Geçin.</h4>
+      <div id="footer">
+        <div class="contact">
           <a href=""><img src="images/footer-logo.png" alt="" /></a>
           <p>© 2016 Webazor</p>
           <b>E-mail Adresimiz : iletisim@webazor.com</b>
           <div class="social-media">
             <a href=""><img src="images/facebook.png" alt="" /></a>
             <a href=""><img src="images/twitter.png" alt="" /></a>
-            <a href=""><img src="images/icon.png" alt="" /></a>
+            <a href=""><img src="images/linked in.png" alt="" /></a>
             <a href=""><img src="images/email.png" alt="" /></a>
           </div>
         </div>
-        <div class="footer-content-right">
-          <input type="text" value="Adın ve Soyadın" />
-          <input type="text" value="eposta@adresin.com" />
-          <input type="text" value="0 5** *** ** **" />
-          <input
-            type="text"
-            value="Yazacak bir şeyiniz olmasa bile 'Merhaba' deyin."
-          />
+        <div class="information">
+          <input type="text" placeholder="Adın ve Soyadın" />
+          <input type="text" placeholder="eposta@adresin.com" />
+          <input type="text" placeholder="0 5** *** ** **" />
+          <textarea
+            placeholder="Yazacak bir şeyiniz olmasa da 'merhaba' deyin"
+          ></textarea>
           <button>Mesajını Gönder</button>
         </div>
       </div>

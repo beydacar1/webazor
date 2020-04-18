@@ -13,7 +13,7 @@ body {
       padding: 30px 0;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 0.4px solid #414141; }
+      border-bottom: 1px solid #414141; }
       body header #header nav ul {
         display: flex; }
         body header #header nav ul li {
@@ -23,7 +23,7 @@ body {
             color: #fff;
             font-weight: 400; }
             body header #header nav ul li a:hover {
-              color: #49a479; }
+              color: #69f0ae; }
     body header section {
       width: 700px;
       padding: 50px 0;
@@ -34,7 +34,7 @@ body {
       color: white; }
       body header section h3 {
         font-size: 38px;
-        color: #49a479;
+        color: #69f0ae;
         font-weight: 700; }
       body header section p {
         margin: 0 auto;
@@ -48,14 +48,16 @@ body {
       body header section button {
         width: 220px;
         height: 50px;
-        border: 2px solid #49a479;
+        border: 2px solid #69f0ae;
         color: #fff;
         font-size: 15px;
         font-weight: 400;
-        background: none; }
+        background: none;
+        outline: none;
+        cursor: pointer; }
         body header section button:hover {
           color: #398561; }
-      body header section a {
+      body header section #scroll a {
         display: block;
         padding: 20px;
         margin-top: 100px; }
@@ -70,32 +72,32 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0px auto; }
-    body article .left-content {
+    body article .whoamus {
       width: 550px;
       text-align: right;
       border-right: 1px solid #efefef; }
-      body article .left-content h4 {
+      body article .whoamus h4 {
         font-weight: 300;
         font-size: 15px;
         margin-right: 50px; }
-      body article .left-content p {
+      body article .whoamus p {
         font-style: 14px;
         font-weight: 300;
         line-height: 30px;
         margin-right: 50px; }
-    body article .right-content {
+    body article .importforus {
       text-align: left;
       width: 550px; }
-      body article .right-content h4 {
+      body article .importforus h4 {
         font-weight: 300;
         font-size: 15px;
         margin-left: 50px; }
-      body article .right-content ul {
+      body article .importforus ul {
         margin-right: 50px; }
-        body article .right-content ul li {
+        body article .importforus ul li {
           line-height: 30px;
           font-weight: 300; }
-          body article .right-content ul li a {
+          body article .importforus ul li a {
             display: inline-block;
             margin-right: 10px;
             width: 120px;
@@ -103,89 +105,184 @@ body {
             background-color: #69f0ae;
             line-height: 35px;
             text-align: center;
+            color: #302c2a;
             font-weight: bold;
             margin-bottom: 10px; }
   body aside {
     width: 100%;
     background-color: #efefef; }
-    body aside #aside {
+    body aside #future {
       width: 1200px;
       display: flex;
       margin: 0px auto;
       align-items: center;
       justify-content: space-between;
       height: 120px; }
-      body aside #aside h4 {
+      body aside #future h4 {
         font-size: 30px;
         font-weight: 300; }
-      body aside #aside button {
+      body aside #future button {
         width: 200px;
         height: 45px;
         background: none;
-        border: 1px solid #efefef;
+        border: 1px solid #c8c8c8;
         font-size: 17px;
-        font-weight: 600; }
-    body aside .slider {
-      background-color: #fff;
-      padding-top: 50px; }
-      body aside .slider h4 {
-        font-size: 25px;
-        text-align: center;
-        font-weight: 400;
-        padding-bottom: 15px; }
+        font-weight: 600;
+        outline: none;
+        cursor: pointer; }
+    body aside .sayfa {
+      width: 700px;
+      margin: 0 auto; }
+      body aside .sayfa .sliderKonum {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        overflow: hidden; }
+      body aside .sayfa .img-bir {
+        left: 0px; }
+      body aside .sayfa .img-iki {
+        left: 700px; }
+      body aside .sayfa .img-uc {
+        left: 1400px; }
+      body aside .sayfa .sliderKonum > .slider {
+        position: absolute;
+        left: 0px;
+        width: 2800px;
+        height: 400px;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-name: sliders;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-duration: 10s;
+        -moz-animation-name: sliders;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation-duration: 10s;
+        -ms-animation-name: sliders;
+        -ms-animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; }
+
+@-webkit-keyframes sliders {
+  0% {
+    left: 0px; }
+  10% {
+    left: 0px; }
+  20% {
+    left: -700px; }
+  30% {
+    left: -700px; }
+  40% {
+    left: -1400px; }
+  50% {
+    left: -1400px; } }
+
+@-moz-keyframes sliders {
+  0% {
+    left: 0px; }
+  10% {
+    left: 0px; }
+  20% {
+    left: -700px; }
+  30% {
+    left: -700px; }
+  40% {
+    left: -1400px; }
+  50% {
+    left: -1400px; } }
+
+@-ms-keyframes sliders {
+  body aside .sayfa 0% {
+    left: 0px; }
+  body aside .sayfa 10% {
+    left: 0px; }
+  body aside .sayfa 20% {
+    left: -700px; }
+  body aside .sayfa 30% {
+    left: -700px; }
+  body aside .sayfa 40% {
+    left: -1400px; }
+  body aside .sayfa 50% {
+    left: -1400px; } }
+
+@keyframes sliders {
+  0% {
+    left: 0px; }
+  10% {
+    left: 0px; }
+  20% {
+    left: -700px; }
+  30% {
+    left: -700px; }
+  40% {
+    left: -1400px; }
+  50% {
+    left: -1400px; } }
   body footer {
-    width: 100%;
     background-color: #202123;
-    margin: 0px auto;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     body footer h4 {
       font-weight: 400;
       font-size: 25px;
-      padding-bottom: 15px;
       color: #fff;
-      padding-top: 30px;
+      padding-top: 15px;
       text-align: center; }
-    body footer .footer {
+    body footer #footer {
       width: 1200px;
-      display: flex; }
-      body footer .footer .footer-content-left {
+      display: flex;
+      margin: 0px auto;
+      justify-content: space-between; }
+      body footer #footer .contact {
         display: flex;
         flex-direction: column;
-        margin: auto 50px; }
-        body footer .footer .footer-content-left p {
+        width: 400px; }
+        body footer #footer .contact p {
           font-size: 14px;
           font-weight: 300;
           color: #525253; }
-        body footer .footer .footer-content-left b {
+        body footer #footer .contact b {
           color: #fff;
           font-size: 16px;
           font-weight: 300;
           padding-bottom: 15px; }
-        body footer .footer .footer-content-left .social-media {
-          margin: 0px auto;
-          align-items: center;
-          justify-content: space-around;
-          width: 300px; }
-          body footer .footer .footer-content-left .social-media a {
-            margin: 0px auto; }
-      body footer .footer .footer-content-right {
+        body footer #footer .contact .social-media {
+          width: 300px;
+          padding-top: 10px; }
+          body footer #footer .contact .social-media a {
+            padding-right: 30px; }
+      body footer #footer .information {
         display: flex;
-        width: 700px;
-        flex-direction: column;
-        align-items: stretch; }
-        body footer .footer .footer-content-right input[type="text"] {
+        width: 750px;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        body footer #footer .information input {
           width: 335px;
           height: 45px;
           margin-bottom: 20px;
           background-color: #242527;
           border: 1px solid #3a3b3b;
           padding-left: 15px;
-          color: #3a3b3b; }
-        body footer .footer .footer-content-right button {
+          outline: none;
+          color: #525253; }
+        body footer #footer .information textarea {
+          width: 335px;
+          height: 45px;
+          margin-bottom: 20px;
+          background-color: #242527;
+          border: 1px solid #3a3b3b;
+          padding-left: 15px;
+          outline: none;
+          resize: none;
+          color: #525253; }
+        body footer #footer .information input::placeholder {
+          color: #525253; }
+        body footer #footer .information button {
           width: 335px;
           height: 60px;
           background-color: #242527;
           color: #fff;
           border: none;
           font-size: 16px;
-          font-weight: 300; }
+          font-weight: 300;
+          outline: none;
+          margin-bottom: 10px;
+          cursor: pointer; }
