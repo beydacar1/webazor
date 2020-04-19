@@ -1,3 +1,4 @@
+
 body {
   width: 100%;
   font-family: "roboto", sans-serif;
@@ -89,10 +90,11 @@ body {
     display: flex;
     color: #000;
     justify-content: center;
+    flex-direction: row;
     width: 100%;
     margin: 0px auto;
     .whoamus {
-      width: 550px;
+      width: 500px;
       text-align: right;
       border-right: 1px solid #efefef;
       h4 {
@@ -109,7 +111,7 @@ body {
     }
     .importforus {
       text-align: left;
-      width: 550px;
+      width: 500px;
       h4 {
         font-weight: 300;
         font-size: 15px;
@@ -159,6 +161,7 @@ body {
         font-weight: 600;
         outline: none;
         cursor: pointer;
+        margin-right: 20px;
       }
     }
     .sayfa {

@@ -71,10 +71,11 @@ body {
     display: flex;
     color: #000;
     justify-content: center;
+    flex-direction: row;
     width: 100%;
     margin: 0px auto; }
     body article .whoamus {
-      width: 550px;
+      width: 500px;
       text-align: right;
       border-right: 1px solid #efefef; }
       body article .whoamus h4 {
@@ -88,7 +89,7 @@ body {
         margin-right: 50px; }
     body article .importforus {
       text-align: left;
-      width: 550px; }
+      width: 500px; }
       body article .importforus h4 {
         font-weight: 300;
         font-size: 15px;
@@ -130,7 +131,8 @@ body {
         font-size: 17px;
         font-weight: 600;
         outline: none;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-right: 20px; }
     body aside .sayfa {
       width: 700px;
       margin: 0 auto; }
