@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link
@@ -15,42 +19,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
-        });
-      });
-    </script>
   </head>
   <body>
     <header>
       <div class="header">
         <a href=""><img src="images/webazor-logo.png" alt="logo" /></a>
         <nav>
+          <div id="icon" onClick="hamburgerMenu();">
+            <svg
+              id="Capa_1"
+              enable-background="new 0 0 515.555 515.555"
+              height="30"
+              viewBox="0 0 515.555 515.555"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"
+              />
+              <path
+                d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"
+              />
+              <path
+                d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"
+              />
+            </svg>
+          </div>
+          <div id="menu">
           <ul>
             <li>
               <a href="">ANASAYFA</a>
@@ -68,6 +63,7 @@
               <a href="">İLETİŞİM</a>
             </li>
           </ul>
+        </div>
         </nav>
       </div>
       <section>
@@ -80,12 +76,12 @@
         </p>
         <button>YARDIMCI OLALIM</button>
         <div id="scroll">
-          <a href="#footer"><img src="images/scroll.png" alt="button" /></a>
+          <a href="#whous"><img src="images/scroll.png" alt="button" /></a>
         </div>
       </section>
     </header>
     <h3>Hakkımızda.</h3>
-    <article>
+    <article id="whous">
       <div class="whoamus">
         <h4>Biz Kim miyiz?</h4>
         <p>
@@ -126,20 +122,32 @@
       </div>
     </aside>
     <aside>
-      <div class="sayfa">
-        <div class="sliderKonum">
-          <div class="slider">
-            <a class="img-bir" href="images/scroll-img.png">
-              <img src="images/scroll-img.png" alt="resim" />
-            </a>
-            <a class="img-iki" href="images/scroll-img.png">
-              <img src="images/scroll-img.png" alt="resim" />
-            </a>
-            <a class="img-uc" href="images/scroll-img.png">
-              <img src="images/scroll-img.png" alt="resim" />
-            </a>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="images/scroll-img.png" alt="" srcset="" /></a>
           </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </aside>
     <footer>
@@ -167,5 +175,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    
   </body>
 </html>

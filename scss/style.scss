@@ -1,5 +1,5 @@
-
 body {
+  position: relative;
   width: 100%;
   font-family: "roboto", sans-serif;
   header {
@@ -17,16 +17,25 @@ body {
       justify-content: space-between;
       border-bottom: 1px solid #414141;
       nav {
-        ul {
-          display: flex;
-          li {
-            padding-right: 18px;
-            a {
-              font-size: 16px;
-              color: #fff;
-              font-weight: 400;
-              &:hover {
-                color: #69f0ae;
+        #icon {
+          display: none;
+        }
+        #menu {
+          display: block;
+
+          ul {
+            display: flex !important;
+            li {
+              padding-right: 18px;
+              a {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+                &:hover {
+                  color: #69f0ae;
+                  border-bottom: 1px solid #69f0ae;
+                  padding-bottom: 46px;
+                }
               }
             }
           }
@@ -164,121 +173,30 @@ body {
         margin-right: 20px;
       }
     }
-    .sayfa {
-      width: 700px;
-      margin: 0 auto;
-      .sliderKonum {
-        position: relative;
-        width: 700px;
-        height: 400px;
-        overflow: hidden;
-      }
-      .img-bir {
-        left: 0px;
-      }
-      .img-iki {
-        left: 700px;
-      }
-      .img-uc {
-        left: 1400px;
-      }
-      .sliderKonum > .slider {
-        position: absolute;
-        left: 0px;
-        width: 2800px;
-        height: 400px;
-        -webkit-animation-duration: 10s;
-        -webkit-animation-name: sliders;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-duration: 10s;
-        -moz-animation-name: sliders;
-        -moz-animation-iteration-count: infinite;
-        -ms-animation-duration: 10s;
-        -ms-animation-name: sliders;
-        -ms-animation-iteration-count: infinite;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-      }
-      @-webkit-keyframes sliders {
-        0% {
-          left: 0px;
-        }
-        10% {
-          left: 0px;
-        }
-        20% {
-          left: -700px;
-        }
-        30% {
-          left: -700px;
-        }
-        40% {
-          left: -1400px;
-        }
-        50% {
-          left: -1400px;
+    .swiper-container {
+      .swiper-slide {
+        a {
+          img {
+            width: 95%;
+            height: 95;
+          }
         }
       }
-      @-moz-keyframes sliders {
-        0% {
-          left: 0px;
-        }
-        10% {
-          left: 0px;
-        }
-        20% {
-          left: -700px;
-        }
-        30% {
-          left: -700px;
-        }
-        40% {
-          left: -1400px;
-        }
-        50% {
-          left: -1400px;
-        }
-      }
-      @-ms-keyframes sliders {
-        0% {
-          left: 0px;
-        }
-        10% {
-          left: 0px;
-        }
-        20% {
-          left: -700px;
-        }
-        30% {
-          left: -700px;
-        }
-        40% {
-          left: -1400px;
-        }
-        50% {
-          left: -1400px;
-        }
-      }
-      @keyframes sliders {
-        0% {
-          left: 0px;
-        }
-        10% {
-          left: 0px;
-        }
-        20% {
-          left: -700px;
-        }
-        30% {
-          left: -700px;
-        }
-        40% {
-          left: -1400px;
-        }
-        50% {
-          left: -1400px;
-        }
-      }
+    }
+    .swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
     }
   }
   footer {
