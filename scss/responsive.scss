@@ -4,8 +4,9 @@
     header {
       width: 100% !important;
       .header {
+        width: 95% !important;
+          border: none !important;
         padding-top: 15px !important;
-        width: 100% !important;
         flex-direction: column !important;
         nav {
           ul {
@@ -88,7 +89,7 @@
       }
     }
     aside {
-      width: 100½ !important;
+      width: 100% !important;
       #future {
         width: 100% !important;
         height: 100px !important;
@@ -139,6 +140,8 @@
         .information {
           width: 100% !important;
           padding-top: 20px !important;
+          flex-direction: column !important;
+          align-items: center;
           input {
             width: 150px !important;
             height: 30px !important;
@@ -165,12 +168,13 @@
   body {
     width: 100% !important;
     header {
-      width: 100% !important;
+        width: 100% !important;
       .header {
+        width: 95% !important;
+        border: none;
         padding-right: 10px !important;
         padding-left: 10px !important;
         flex-direction: column;
-        width: 100% !important;
         nav {
           ul {
             padding-top: 15px !important;
@@ -212,7 +216,9 @@
       .whoamus {
         width: 95% !important;
         text-align: center !important;
-        border: none !important;
+        border-bottom: 1px solid #efefef !important;
+        border-right: none !important;
+        padding-bottom: 10px !important;
       }
       h4 {
         margin: 0 !important;
@@ -249,12 +255,13 @@
       }
     }
     aside {
-      width: 100½ !important;
+      width: 100% !important;
       #future {
         width: 100% !important;
         height: 120px !important;
         h4 {
           font-size: 18px !important;
+          padding-left: 15px !important;
         }
         button {
           width: 150px !important;
@@ -300,13 +307,13 @@
           width: 100% !important;
           padding-top: 25px !important;
           input {
-            width: 200px !important;
+            width: 220px !important;
             height: 40px !important;
             margin-bottom: 10px !important;
             padding-left: 15px !important;
           }
           textarea {
-            width: 200px !important;
+            width: 220px !important;
             height: 40px !important;
             margin-bottom: 10px !important;
             padding-left: 15px !important;
@@ -323,15 +330,14 @@
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 992px) {
   body {
+      width: 100% !important;
     header {
       width: 100% !important;
       .header {
-          width: 95% !important;
+        width: 95% !important;
         padding-right: 15px !important;
         padding-left: 15px !important;
         flex-direction: column;
-
-        width: 100% !important;
         nav {
           ul {
             padding-top: 20px !important;
@@ -368,7 +374,7 @@
       }
     }
     aside {
-      width: 100½ !important;
+      width: 100% !important;
       #future {
         width: 100% !important;
         height: 120px !important;
@@ -396,7 +402,7 @@
         padding-top: 20px !important;
       }
       #footer {
-        width: 95% !important;
+        width: 100% !important;
         .contact {
           width: 80% !important;
           margin: 0px auto !important;
@@ -449,16 +455,9 @@
         width: 100% !important;
       }
     }
-    section {
-      width: 100% !important;
-    }
-
-    article {
-      width: 100% !important;
-    }
 
     aside {
-      width: 100½ !important;
+      width: 100% !important;
       #future {
         width: 100% !important;
       }
@@ -476,5 +475,5 @@
         width: 95% !important;
       }
     }
-  }
+}
 }
