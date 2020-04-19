@@ -242,6 +242,7 @@
   body header {
     width: 100% !important; }
     body header .header {
+      width: 95% !important;
       padding-right: 15px !important;
       padding-left: 15px !important;
       flex-direction: column;
