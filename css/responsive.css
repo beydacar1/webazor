@@ -8,27 +8,38 @@
         border: none !important;
         padding-top: 15px !important;
         flex-direction: column !important; }
-        body header .header nav #icon {
-          display: block !important; }
-          body header .header nav #icon svg {
-            fill: white; }
-          body header .header nav #icon:hover {
-            cursor: pointer; }
-        body header .header nav #menu {
-          display: none; }
-          body header .header nav #menu ul {
+        body header .header nav {
+          width: 100% !important; }
+          body header .header nav #icon {
             display: block !important;
-            padding: 15px auto !important; }
-            body header .header nav #menu ul li {
-              padding-bottom: 15px !important; }
-              body header .header nav #menu ul li a {
-                font-size: 17px !important;
-                color: #fff !important;
-                text-align: center !important;
-                padding-right: 50px; }
-                body header .header nav #menu ul li a:hover {
-                  color: #69f0ae !important;
-                  border-bottom: none !important; }
+            position: absolute !important;
+            top: 20px !important;
+            right: 20px !important; }
+            body header .header nav #icon svg {
+              fill: white; }
+            body header .header nav #icon:hover {
+              cursor: pointer; }
+          body header .header nav #menu {
+            display: none;
+            width: 100%;
+            padding: 15px !important;
+            margin-top: 15px !important;
+            background-color: #000 !important;
+            opacity: 0.34 !important;
+            border: 1px solid #000 !important; }
+            body header .header nav #menu ul {
+              width: 100% !important;
+              display: block !important;
+              padding: 15px auto !important; }
+              body header .header nav #menu ul li {
+                padding-bottom: 15px !important; }
+                body header .header nav #menu ul li a {
+                  font-size: 18px !important;
+                  color: #fff !important;
+                  text-align: center !important; }
+                  body header .header nav #menu ul li a:hover {
+                    color: #69f0ae !important;
+                    border-bottom: none !important; }
       body header section {
         width: 100% !important;
         padding: 20px auto; }
